@@ -29,7 +29,21 @@ footer{
 nav ul li {
     /* padding: 1rem; */
     margin: 0 3rem;
-    border-bottom: 4px solid #ddd;
+    position:relative;
+}
+nav ul li a::after{
+    content: " ";
+    position: absolute;
+    background: rgb(246, 248, 246);
+    width: 0;
+    height:3px;
+    left:0;
+    top:40px;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 1s ;
 }
 
 #home {
